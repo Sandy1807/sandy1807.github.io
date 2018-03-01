@@ -1501,6 +1501,8 @@ ul {
 }
 
 @media screen and (max-width: 25em) { 
+
+
 	.cbp-ig-grid {
 		font-size: 80%;
 	}
@@ -2129,7 +2131,7 @@ button.close:hover {
 .margin0{margin: 0;}
 .marginTop30{margin-top: 30px;}
 
-/* added by ashwani for portfolio page */
+/* added by   for portfolio page */
 .custCarosal{width: 78.5%;overflow: hidden;margin: 21px 0px 0 84px;}
 .custCarosal .item{text-align:center;height: 338px; }
 .custCarosal img{display:initial !important; }
@@ -2176,7 +2178,18 @@ button.close:hover {
 	 .navPrev{left:10px;}
 	 .navNext {right: 10px;}
 	 .carousel-indicators { top: 54px;}
-	 #myCarousel .navigation_button{top:auto;bottom:0;}
+	 /* #myCarousel .navigation_button{top:auto;bottom:0;} */
+	 /* START css added by ashwani for responsive on portfolio on 1-march-2018 */
+	#myCarousel .navigation_button{top:15px;bottom:auto;}
+	#myCarousel{padding-bottom: 0;}
+	.content-overlay-halfwidth{display:none;}
+	.custClose{right:9px}
+	.custClose .btn.navigation_button1 {  padding: 0 6px;}
+	
+	.strip{position:inherit !important;}
+	.heading-separator{font-size:18px;}
+	.carousel-indicators {  top: 30px !important;}
+	/* END css added by ashwani for responsive on portfolio on 1-march-2018 */
  }
   @media (min-width: 768px) and (max-width: 991px){
  .custCarosal { width: 78.6%; overflow: hidden; margin: 21px 0px 0 80px;}
