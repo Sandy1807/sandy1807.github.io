@@ -1,0 +1,40 @@
+
+/* Style.css
+==============================*/
+
+.pattern_bg {
+	background: url(../img/patterns/01.png) repeat fixed 50% 0 transparent;
+	height:100%;
+	width:100%;
+	position:fixed;
+	z-index:7;
+	top:0;
+}
+/* Spmenu Section */	
+
+
+/* Home Section
+==============================*/
+
+
+@media (max-width: 991px){
+#home-screen .content-block{ 
+	top:50%;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+}
+
+@media (max-height: 480px){
+#home-screen .content-block{ 
+	top:70%;
+	-webkit-transform: translateY(-70%);
+	-moz-transform: translateY(-70%);
+	-ms-transform: translateY(-70%);
+	-o-transform: translateY(-70%);
+	transform: translateY(-70%);
+}
+}

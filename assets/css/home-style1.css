@@ -1,0 +1,148 @@
+
+/* Style.css
+==============================*/
+
+.bgimg {
+	background: url(../img/homebg.jpg) center center;
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	/*z-index: 7;*/
+	top: 0;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.pattern_bg {
+	background: url(../img/patterns/01.png) repeat fixed 50% 0 transparent;
+	height:100%;
+	width:100%;
+	position:absolute;
+	z-index:7;
+	top:0;
+}
+
+.circlebg {
+	width:400px;
+	height:400px;
+	margin:0px auto;
+	background:rgba(243,115,79,.95);
+	border:12px solid rgba(0,0,0,0.5);
+	-moz-border-radius:50%;
+	-webkit-border-radius:50%;
+	border-radius:50%;
+	-moz-background-clip: padding;     /* Firefox 3.6 */
+	-webkit-background-clip: padding;  /* Safari 4? Chrome 6? */
+	background-clip: padding-box;      /* Firefox 4, Safari 5, Opera 10, IE 9 */
+	z-index:999;
+	position:relative;
+}
+
+.home_title {
+	font-size:40px; 
+	color:#000; 
+	text-align:center; 
+	padding-top:32px; 
+	font-weight:300; 
+}
+
+.home_title_heading {
+	color:#fff; 
+	font-size:65px; 
+	text-transform:uppercase; 
+	font-weight:900; 
+	text-align:center;
+}
+
+.home_title1 {
+	font-size:36px; 
+	color:#262626; 
+	text-align:center; 
+	font-weight:300;
+}
+
+.home_title2 { 
+	font-size:38px; 
+	font-weight:900; 
+	text-align:center;
+}
+
+.center {
+	left:0;
+	right:0;
+	top: 45%;
+	transform: translateY(-45%);
+	-webkit-transform: translateY(-45%);
+	-moz-transform: translateY(-45%);
+	-ms-transform: translateY(-45%);
+	margin:auto;
+	position:absolute;
+	z-index:99;
+}
+/* // Home Section */
+
+@media (min-width:768px) and (max-width:1200px){
+.circlebg { 
+	width: 350px; 
+	height:350px; 
+}
+}
+
+@media (min-width: 481px) and (max-width: 767px){
+.circlebg { 
+	width: 380px; 
+	height: 380px;  
+	margin-left:auto;
+}
+}
+
+@media (max-height: 480px) {
+.home_title { 
+	padding-top:10px;
+}
+
+.circlebg {
+	width: 220px!important;
+	height: 220px!important;
+	border: 8px solid rgba(0,0,0,0.5);
+	margin-left:10%;
+}
+
+.accura-header-block {
+	display:none;
+}
+
+.home_address, .call {
+    text-align: right;
+}
+}
+
+
+@media (max-height: 380px) {
+
+.circlebg {
+	width: 150px!important;
+	height: 150px!important;
+	border: 8px solid rgba(0,0,0,0.5);
+	margin-left:10%;
+}
+
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+.circlebg {
+	width:220px;
+	height:220px; 
+	border: 8px solid rgba(0,0,0,0.5); 
+}
+}
+
+@media (min-width: 240px) and (max-width: 319px) {
+.circlebg { 
+	width: 180px; 
+	height: 180px;  
+	border: 8px solid rgba(0,0,0,0.5);
+}
+}

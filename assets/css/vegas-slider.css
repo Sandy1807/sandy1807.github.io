@@ -1,0 +1,32 @@
+
+/* Style.css
+==============================*/
+
+.pattern_bg {
+	background: url(../img/patterns/06.png) repeat fixed 50% 0 transparent;
+	height:100%;
+	width:100%;
+	position:fixed;
+	z-index:7;
+	top:0;
+}
+
+
+/* Home Section */	
+
+.home_title{font-size:55px; color:#ffffff; text-align:center; padding-bottom:20px;}
+.home_title span{color:#fff; font-weight:700; text-transform:uppercase;}
+.home_arrow{ padding-top:135px; text-align:center;}
+.home_arrow a{color:#E7FEFF;}
+.home_arrow:hover{ color:#fff; text-decoration:none;}
+
+/*#home .content-overlay{background:#ffcc00;}
+#home .content_text { z-index: 3; padding: 0% 3% 5% 5%; }*/
+
+/* // Home Section First Menu Style */
+
+/* Spmenu Section */	
+.spmenu span {color: #73A6A5;}
+
+/* Home Section
+==============================*/

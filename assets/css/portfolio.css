@@ -1,0 +1,148 @@
+
+
+.filters {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.filters li {
+	display: inline-block;
+	margin: 5px;
+	background-color:#727272;
+	color:#fff;
+	cursor: pointer;
+	font-size: 14px;
+	text-transform: uppercase;
+	padding: 3px 30px;
+    line-height: 35px;
+	text-align: center;
+	border-radius: 2px;
+	font-family: 'Carrois Gothic SC', sans-serif;
+}
+
+.filters li:hover, 
+.filters li.active {
+    background: rgba(239, 154, 0,0.9);
+}
+
+#portfolio-grid-modal li,
+#portfolio-grid li {
+	display:none;
+}
+
+.portfolio-grid li {
+  width: 25%;
+  float: left;
+  display: block;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.portfolio-grid-filter li {
+	display: none;
+}
+
+.portfolio-grid li img {
+	width: 100%;
+	transition: 0.8s ease;
+	-webkit-transition: 0.8s ease;
+	-moz-transition: 0.8s ease;
+	-ms-transition: 0.8s ease;
+	border:1px solid #FFF;
+	filter: gray;
+	filter: grayscale(0);
+	-webkit-filter: grayscale(0);
+}
+
+.portfolio-grid li:hover img {
+	-webkit-transform: scale(1.25);
+	-moz-transform: scale(1.25);
+	-ms-transform: scale(1.25);
+	-o-transform: scale(1.25);
+	transform: scale(1.25);
+}
+
+.project-overlay {
+	position:absolute;
+	left:0;
+	right:0;
+	top:0;
+	bottom:0;
+	opacity:0;
+	background:rgba(17,17,17,.7);
+	color:#fff;
+	text-align:center;
+	transition: 0.8s ease;
+	-webkit-transition: 0.8s ease;
+	-moz-transition: 0.8s ease;
+	-ms-transition: 0.8s ease;
+}
+
+.portfolio-grid li:hover .project-overlay { 
+	cursor: url(../img/pointer.png),crosshair; 
+	opacity:1;
+}
+
+.three-column.portfolio-grid li { 
+	width:33%;
+}
+
+.two-column.portfolio-grid li { 
+	width:50%;
+}
+
+.port-caption {
+	font-family:'Raleway', sans-serif;
+	font-size:16px; 
+	background:rgba(239, 154, 0,0.9);
+	color:#fff; 
+	line-height:24px; 
+	font-weight:600;
+	padding:20px;
+	position:absolute;
+	width:100%;
+	bottom: -100%;
+	transition:.5s;
+	-webkit-transition:.5s;
+	-moz-transition:.5s;
+	-ms-transition:.5s;
+}
+
+.portfolio-grid li:hover .port-caption {
+    bottom: 0;
+}
+
+@media (max-width: 991px) {
+  .portfolio-grid li,
+  .three-column.portfolio-grid li {
+    width: 50%;
+  }
+}
+
+@media (max-width: 767px) {
+.portfolio-grid li, 
+.two-column.portfolio-grid li,
+.three-column.portfolio-grid li { 
+	width:100%;
+}
+
+}
+
+#clients li.element_from_bottom img {
+	filter: gray;
+	filter: grayscale(0);
+	-webkit-filter: grayscale(0);
+	
+}
+#clients li.element_from_bottom img:hover {
+	filter: gray;
+	filter: grayscale(1);
+	-webkit-filter: grayscale(1);
+	transition: 0.8s ease;
+	-webkit-transition: 0.8s ease;
+	-moz-transition: 0.8s ease;
+	-ms-transition: 0.8s ease;
+	
+	
+}

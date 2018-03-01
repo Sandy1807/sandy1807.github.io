@@ -1,0 +1,287 @@
+
+/* Style.css
+==============================*/
+
+
+.bgimg {
+	background: url("http://placehold.it/1900x950") center center;
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	z-index: 7;
+	top: 0;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.pattern_bg5 {
+	height:100%;
+	width:100%;
+	position:fixed;
+	z-index:7;
+	top:0;
+	background: rgba(37,116,169,1);
+	background: -moz-linear-gradient(45deg, rgba(37,116,169,1) 0%, rgba(37,116,169,0.5) 100%);
+	background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(37,116,169,1)), color-stop(100%, rgba(37,116,169,0.5)));
+	background: -webkit-linear-gradient(45deg, rgba(37,116,169,1) 0%, rgba(37,116,169,0.5) 100%);
+	background: -o-linear-gradient(45deg, rgba(37,116,169,1) 0%, rgba(37,116,169,0.5) 100%);
+	background: -ms-linear-gradient(45deg, rgba(37,116,169,1) 0%, rgba(37,116,169,0.5) 100%);
+	background: linear-gradient(45deg, rgba(37,116,169,1) 0%, rgba(37,116,169,0.5) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2574a9', endColorstr='#2574a9', GradientType=1 );
+}
+
+/* Home Section
+==============================*/
+
+.home_title{font-size:40px; color:#ffffff; text-align:left; }
+.home_title span{color:#fff; font-weight:700; text-transform:uppercase;}
+
+
+/* // Home Section First Menu Style */
+
+.center {
+	left:0;
+	right:0;
+	bottom:0;
+	top: 50%;
+    transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	margin:auto;
+	position:absolute;
+	z-index:99;
+}
+
+
+.hexagon {
+  position: relative;
+  width: 80px; 
+  height: 46.19px;
+  background-color: transparent;
+  margin: 23.09px 0;
+  border-left: solid 1px #fff;
+  border-right: solid 1px #fff;
+  margin:25px auto;
+  text-align:center;
+}
+
+.hexagon:before,
+.hexagon:after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  width: 56.57px;
+  height: 56.57px;
+  -webkit-transform: scaleY(0.5774) rotate(-45deg);
+  -ms-transform: scaleY(0.5774) rotate(-45deg);
+  transform: scaleY(0.5774) rotate(-45deg);
+  background-color: inherit;
+  left: 10.7157px;
+}
+
+.hexagon:before {
+  top: -28.2843px;
+  border-top: solid 1.4142px #fff;
+  border-right: solid 1.4142px #fff;
+}
+
+.hexagon:after {
+  bottom: -28.2843px;
+  border-bottom: solid 1.4142px #fff;
+  border-left: solid 1.4142px #fff;
+}
+.hexagon i{ color:#fff; font-size:26px; line-height:52px;}
+
+#hexagon {
+	width: 60px;
+	height: 68px;
+	margin:25px auto;
+}
+/* // Home arrow */
+
+#home .subtitle { 
+	font-size: 18px; 
+	color: #fff; 
+	padding-top:20px; 
+	font-weight:100; 
+}
+
+
+
+/* Owl sider */
+.owl-theme .owl-controls{
+	margin-top: 10px;
+	text-align: center;
+}
+
+/* Styling Next and Prev buttons */
+
+.owl-theme .owl-controls .owl-buttons div{
+	color: #FFF;
+	display: inline-block;
+	zoom: 1;
+	*display: inline;/*IE7 life-saver */
+	margin: 5px;
+	padding: 3px 10px;
+	font-size: 35px;
+}
+.owl-theme .owl-controls .owl-buttons div i{font-style:normal; font-weight:900; }
+/* Clickable class fix problem with hover on touch devices */
+/* Use it for non-touch hover action */
+.owl-theme .owl-controls.clickable .owl-buttons div:hover{
+	filter: Alpha(Opacity=100);/*IE7 fix*/
+	opacity: 1;
+	text-decoration: none;
+}
+
+/* Styling Pagination*/
+
+.owl-theme .owl-controls .owl-page{
+	display: inline-block;
+	zoom: 1;
+	*display: inline;/*IE7 life-saver */
+}
+.owl-theme .owl-controls .owl-page span{
+	display: block;
+	width: 12px;
+	height: 12px;
+	margin: 5px 7px;
+}
+
+.owl-theme .owl-controls .owl-page.active span,
+.owl-theme .owl-controls.clickable .owl-page:hover span{
+	filter: Alpha(Opacity=100);/*IE7 fix*/
+	opacity: 1;
+}
+
+/* preloading images */
+#owl-demo .owl-item > div img {
+    display: block;
+    width: 100%;
+    height: auto;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    margin-bottom:4px;
+}
+
+#owl-demo .owl-item > div{
+  text-align: center;
+  padding:0px;
+  margin:3px;
+  color: white;
+  font-size:32px;
+  border:1px white;
+}
+
+.wrapper-with-margin{
+  margin:20px 50px;
+    position:relative;
+  top:3%;
+}
+
+ 
+.owl-theme .owl-controls .owl-buttons div {
+  position: absolute;
+}
+ 
+.owl-theme .owl-controls .owl-buttons .owl-prev{
+  left: -45px;
+  top:90px; 
+}
+ 
+.owl-theme .owl-controls .owl-buttons .owl-next{
+  right: -45px;
+  top:90px;
+}
+
+/* // Owl slider */
+
+.spmenu span{ color:#99ABB8;}
+
+/* Home Section
+==============================*/
+
+
+@media (min-width:991px) and (max-width:1200px){
+.wrapper-with-margin {
+margin: 0px 50px; 
+position:relative;
+top:3%;
+}
+}
+
+
+@media (max-width: 990px){
+#owl-demo .owl-item > div{ padding:0;}
+#main-menu{ display:block;}
+.wrapper-with-margin{  top:10%;}
+}
+
+@media (min-width: 481px) and (max-width: 767px){
+.accura-social-icons.accura-big li a {width: 40px;height: 40px;}
+.accura-social-icons.accura-big li a i {width: 40px;height: 40px;line-height: 40px;}
+.header_icons li a i{font-size: 16px;}
+}
+
+@media (min-width: 481px) and (max-width: 767px) and (orientation : landscape){
+#home_title1, #home_title2{ font-size:30px!important;}
+#home .subtitle{ padding-top:0;}
+.owl-buttons{ display:none;}
+.wrapper-with-margin{ margin:0 auto; top:3%;}
+
+.hexagon {
+  position: relative;
+  width: 60px; 
+  height: 34.64px;
+  background-color: transparent;
+  border-left: solid 1px #ffffff;
+  border-right: solid 1px #ffffff;
+}
+
+.hexagon:before,
+.hexagon:after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  width: 42.43px;
+  height: 42.43px;
+  -webkit-transform: scaleY(0.5774) rotate(-45deg);
+  -ms-transform: scaleY(0.5774) rotate(-45deg);
+  transform: scaleY(0.5774) rotate(-45deg);
+  background-color: inherit;
+  left: 7.7868px;
+}
+
+.hexagon:before {
+  top: -21.2132px;
+  border-top: solid 1.4142px #ffffff;
+  border-right: solid 1.4142px #ffffff;
+}
+
+.hexagon:after {
+  bottom: -21.2132px;
+  border-bottom: solid 1.4142px #ffffff;
+  border-left: solid 1.4142px #ffffff;
+}
+
+.hexagon i{ line-height:26px;}
+
+}
+
+@media (max-width: 767px) and (orientation : landscape){
+.wrapper-with-margin{ margin:0px auto; top:3%;}
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+h1{font-size:32px;}
+.home_title{ font-size:20px!important;}
+}
+@media (min-width: 240px) and (max-width: 320px) {
+h1{font-size:32px;}
+.home_title{ font-size:16px!important;}
+.call{ display:none;}
+}

@@ -1,0 +1,301 @@
+/*
+    these are just the default styles used in the Cycle2 demo pages.  
+    you can use these styles or any others that you wish.
+*/
+
+
+/* set border-box so that percents can be used for width, padding, etc (personal preference) */
+.cycle-slideshow, .cycle-slideshow * { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+
+
+.cycle-slideshow { width: 400px; min-width: 200px; max-width: 500px; margin: 10px auto; padding: 0; position: relative;
+    background: url(../img/AjaxLoader.gif) 50% 50% no-repeat;
+
+ }
+
+/* slideshow images (for most of the demos, these are the actual "slides") */
+.cycle-slideshow img { 
+    /* 
+    some of these styles will be set by the plugin (by default) but setting them here
+    helps avoid flash-of-unstyled-content
+    */
+    position: absolute; top: 0; left: 0;
+    width: 100%; padding: 0; display: block;
+}
+
+/* in case script does not load */
+.cycle-slideshow img:first-child {
+    position: static; z-index: 100;
+}
+
+/* pager */
+.cycle-pager { 
+    text-align: center; width: 100%; z-index: 500; position: absolute; top: 10px; overflow: hidden;
+}
+.cycle-pager span { 
+    font-family: arial; font-size: 50px; width: 16px; height: 16px; 
+    display: inline-block; color: #ddd; cursor: pointer; 
+}
+.cycle-pager span.cycle-pager-active { color: #D69746;}
+.cycle-pager > * { cursor: pointer;}
+
+
+/* caption */
+.cycle-caption { position: absolute; color: white; bottom: 15px; right: 15px; z-index: 700; }
+
+
+/* overlay */
+.cycle-overlay { 
+    font-family: tahoma, arial;
+    position: absolute; bottom: 0; width: 100%; z-index: 600;
+    background: black; color: white; padding: 15px; opacity: .5;
+}
+
+
+/* prev / next links */
+.cycle-prev, .cycle-next { position: absolute; top: 0; width: 30%; opacity: 0; filter: alpha(opacity=0); z-index: 800; height: 100%; cursor: pointer; }
+.cycle-prev { left: 0;  background: url(http://malsup.github.com/images/left.png) 50% 50% no-repeat;}
+.cycle-next { right: 0; background: url(http://malsup.github.com/images/right.png) 50% 50% no-repeat;}
+.cycle-prev:hover, .cycle-next:hover { opacity: .7; filter: alpha(opacity=70) }
+
+.disabled { opacity: .5; filter:alpha(opacity=50); }
+
+
+/* display paused text on top of paused slideshow */
+.cycle-paused:after {
+    content: 'Paused'; color: white; background: black; padding: 10px;
+    z-index: 500; position: absolute; top: 10px; right: 10px;
+    border-radius: 10px;
+    opacity: .5; filter: alpha(opacity=50);
+}
+
+/* 
+    media queries 
+    some style overrides to make things more pleasant on mobile devices
+*/
+
+
+/* Custom Cycle Slider 
+=============================================================== */
+.gallery-slider {
+    position: relative;
+    height: 100%;
+}
+
+.cycle-slideshow {
+	width:100%;
+	min-width: 100%; 
+	max-width: 100%; 
+	margin: 0px auto;
+	height: 100%;
+}
+
+.cycle-slideshow img {
+	width:auto;
+	max-width: 100%; 
+}
+
+.cycle-paused:after {
+    color: #252525;
+    background: white;
+    top: 100px;
+}
+
+/* Home Page Slider */
+.home-cycle-slider .cycle-slideshow {
+	background:transparent;
+	position:absolute;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-ms-background-size: cover;
+}
+
+.cycle-overlay {
+	background: url(../img/patterns/06.png) repeat fixed 50% 0 transparent;
+	padding:0;
+	top:0;
+    z-index: 105;
+	opacity: 1;
+}
+
+.cycle-overlay div {
+	display:none;
+}
+
+.cycle-slideshow:hover .cycle-next,
+.cycle-slideshow:hover .cycle-prev {
+	opacity:1;
+}
+
+.cycle-next {
+    right: 0;
+    /*border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;*/
+}
+
+.cycle-prev {
+    left: 0;
+    /*border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;*/
+}
+
+.cycle-prev, .cycle-next {
+    position: absolute;
+    top: 50%;
+    transform:translateY(-50%);
+	-webkit-transform:translateY(-50%);
+	-moz-transform:translateY(-50%);
+	-ms-transform:translateY(-50%);
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    z-index: 820;
+    cursor: pointer;
+    font-size: 20px;
+    color: #333;
+    text-align: center;
+    background-color: rgba(255, 255, 255,0.8);
+	background-image:none;
+}
+
+.cycle-prev:hover, 
+.cycle-next:hover {
+	background-color: rgba(246, 170, 0, .9);
+    color: #fff;
+}
+
+.cycle-prev i:before, 
+.cycle-next i:before {
+	margin:0;
+}
+
+.cycle-caption {
+    position: absolute;
+    color: white;
+    position: absolute;
+    color: white;
+    bottom: 25%;
+    left: 10%;
+}
+
+.cycle-caption-center {
+    bottom: 30%;
+    left: 10%;
+}
+
+.caption1,
+.caption2 {
+	color:#FFF;
+	text-shadow: 0px 1px 1px rgba(0,0,0,0.3);
+	text-transform:uppercase;
+	display:block;
+}
+
+.caption1 {
+	font-size:60px;
+	font-weight:800;
+	letter-spacing:2px;
+	-moz-animation: fadeInRight 0.5s ease-in 0.6s backwards;
+	-webkit-animation: fadeInRight 0.5s ease-in 0.6s backwards;
+	animation: fadeInRight 0.5s ease-in 0.6s backwards;
+}
+
+.caption2 {
+	font-weight: lighter;
+	font-size:20px;
+	line-height: 24px;
+	letter-spacing:1px;
+	font-weight:400;
+	-moz-animation: fadeInLeft 0.5s ease-in 0.7s backwards;
+	-webkit-animation: fadeInLeft 0.5s ease-in 0.7s backwards;
+	-o-animation: fadeInLeft 0.5s ease-in 0.7s backwards;
+	animation: fadeInLeft 0.5s ease-in 0.7s backwards;
+}
+/* // Home Page Slider */
+
+/* Caption Type 02 */
+.caption-type-2 {
+	bottom:50px;
+	left:5%;
+	margin-bottom: 5px;
+}
+
+.caption-type-2 .caption1 {
+	background:rgba(246, 170, 0, .9);
+	color:#FFF;
+	font-size:30px;
+	font-weight:500;
+	text-transform:uppercase;
+	z-index:50;
+	padding:5px 10px;
+	opacity:1;
+	display:inline-block;
+}
+
+.caption-type-2 .caption2 {
+	display:none;
+}
+/* // Caption Type 02 */
+
+/* Gallery Cycle Slider */
+#gallery {
+    position: relative;
+}
+
+.gal-top {
+    position: absolute;
+    top: 120px;
+    z-index: 810;
+    width: 100%;
+}
+
+.gal-top #button {
+    white-space: nowrap;
+	vertical-align: bottom;
+}
+
+.cycle-overlay div {
+	font-weight:bold;
+	color:#FFF;
+	font-size:30px;
+	background:rgba(243,42,42,0.9);
+	font-weight:700;
+	position:absolute;
+	text-transform:uppercase;
+	bottom:50px;
+	left:5%;
+	margin-bottom: 5px;
+	z-index:50;
+	padding:5px 10px;
+	opacity:1;
+	clear:both;
+}
+
+.gal-top .cycle-prev, 
+.gal-top .cycle-next {
+    display: table-cell;
+	position:relative;
+	top:0;
+    margin: 0;
+    text-align: center;
+    cursor: pointer;
+	display: inline-block;
+	opacity: 1;
+}
+
+
+/* // Gallery Cycle Slider */
+@media (min-width: 481px) and (max-width: 767px) {
+	.caption1 { font-size:32px;}
+}
+
+@media (max-width: 480px) {
+	.caption1 { font-size:24px; }
+	.caption2 { font-size:16px; }
+	.cycle-overlay div {font-size:24px;}
+}

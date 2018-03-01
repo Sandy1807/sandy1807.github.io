@@ -1,0 +1,205 @@
+
+/* Primary Color :
+	- Slider Heading, Menu & Drop Downs, Buttons, Heading labels.
+	
+Secondary Color :
+	- Hover colors for buttons(Read more, Cycle Navigation). */
+
+/* Primary Colors */
+body ::selection { 
+	background:#f32a2a; 
+	color:white; 
+}
+
+body ::-moz-selection { 
+	background:#f32a2a; 
+	color:white; 
+} 
+
+.cube {
+	background: #f32a2a;
+}
+
+a:hover {
+    color: #f32a2a;
+}
+
+.left-icon {
+    color: #f32a2a;
+}
+
+.btn-3 {
+    background: #f32a2a;
+}
+
+.selected1, 
+.selected1:hover,
+.navbar-nav > li:hover > a, 
+.navbar-nav > li > a:focus, 
+.navbar-nav > .open > a, 
+.navbar-nav > .open > a:hover, 
+.navbar-nav > .open > a:focus, 
+.navbar-nav > li > a.selected {
+    color: #f32a2a!important;
+}
+
+.navbar .dropdown-menu,
+.slicknav_nav,
+.slicknav_nav li ul li a:hover {
+    background: #f32a2a;
+}
+
+.label-default {
+	background: #f32a2a;
+}
+
+.progress_bars li span {
+	background-color: #f32a2a;
+}
+
+.cbp_tmtimeline:before {
+	background: #f32a2a;
+}
+
+.cbp_tmtimeline > li .cbp_tmicon {
+	box-shadow: 0 0 0 6px #f32a2a;
+}
+
+.navigation_button, 
+.navigation_button1:hover, 
+.navigation_button:hover {
+    background-color: #f32a2a;
+}
+
+.modal-table tr:nth-child(odd) {
+    background: #f32a2a;
+}
+
+.strip-content .call i {
+    color: #f32a2a;
+}
+
+.address li:before {
+	color: #f32a2a;
+}
+
+#home-screen .content-block h1 span {
+	color:#f32a2a;
+}
+
+.home_title_type span { 
+	color:#f32a2a;
+}
+
+/* // Primary Colors */
+
+/* RGBA For Primary Color */
+.gal-top .cycle-prev:hover,  
+.gal-top .cycle-next:hover {
+	background:rgba(243, 42, 42, 1);
+}
+
+.caption-type-2 .caption1 {
+	background:rgba(243, 42, 42, .8);
+}
+
+.filters li:hover, 
+.filters li.active { 
+	background-color:rgba(243, 42, 42, 1); 
+}
+
+.port-caption {
+	background-color:rgba(243, 42, 42, 0.9);
+}
+
+.image-hover-icons:before {
+    background: rgba(243, 42, 42, .8);
+}
+
+#contact_form input:focus, 
+#contact_form textarea:focus,
+input:valid:focus { 
+  	/* IE6-9 */
+	-webkit-box-shadow: 0 2px 0px rgba(0, 0, 0, 0.075), 0 3px 0px rgba(243, 42, 42,0.8);
+    -moz-box-shadow: 0 2px 0px rgba(0, 0, 0, 0.075), 0 3px 0px rgba(243, 42, 42,0.8);
+    box-shadow: 0 2px 0px rgba(0, 0, 0, 0.075), 0 3px 0px rgba(243, 42, 42,0.8);
+}
+
+.spmenu {
+    background: rgba(243, 42, 42,0.85);
+}
+
+.spmenu:before {
+    border-top: 17px solid rgba(243, 42, 42,0.85);
+}
+
+button.close, 
+button.close:hover {
+	background: rgba(243, 42, 42, 1);
+}
+
+.circlebg {
+    background:rgba(243, 42, 42,.90);
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding;
+    background-clip: padding-box;
+}
+
+#home .home_flex {
+    background: rgba(243, 42, 42,.9);
+}
+
+.pattern_bg3 {
+    background: rgba(243, 42, 42,0.6);
+    background: -moz-linear-gradient(45deg, rgba(243, 42, 42,0.6) 0%, rgba(243, 42, 42,0.4) 100%);
+    background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(243, 42, 42,0.6)), color-stop(100%, rgba(243, 42, 42,0.4)));
+    background: -webkit-linear-gradient(45deg, rgba(243, 42, 42,0.6) 0%, rgba(243, 42, 42,0.4) 100%);
+    background: -o-linear-gradient(45deg, rgba(243, 42, 42,0.6) 0%, rgba(243, 42, 42,0.4) 100%);
+    background: -ms-linear-gradient(45deg, rgba(243, 42, 42,0.6) 0%, rgba(243, 42, 42,0.4) 100%);
+    background: linear-gradient(45deg, rgba(243, 42, 42,0.6) 0%, rgba(243, 42, 42,0.4) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0eaaa5', endColorstr='#0eaaa5', GradientType=1 );
+}
+
+.pattern_bg4 {
+	background: rgba(243, 42, 42,.6);
+	background: -moz-linear-gradient(45deg, rgba(243, 42, 42,.7) 0%, rgba(243, 42, 42,0.3) 100%);
+	background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(243, 42, 42,.7)), color-stop(100%, rgba(243, 42, 42,0.3)));
+	background: -webkit-linear-gradient(45deg, rgba(243, 42, 42,.7) 0%, rgba(243, 42, 42,0.3) 100%);
+	background: -o-linear-gradient(45deg, rgba(243, 42, 42,.7) 0%, rgba(243, 42, 42,0.3) 100%);
+	background: -ms-linear-gradient(45deg, rgba(243, 42, 42,.7) 0%, rgba(243, 42, 42,0.3) 100%);
+	background: linear-gradient(45deg, rgba(243, 42, 42,.7) 0%, rgba(243, 42, 42,0.3) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2574a9', endColorstr='#2574a9', GradientType=1 );
+}
+
+.pattern_bg_grad {
+	background: rgba(141, 198, 63, 0.7);
+	background: -moz-linear-gradient(45deg, rgba(141, 198, 63,0.7) 0%, rgba(243, 42, 42,0.7) 100%);
+	background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,rgba(141, 198, 63,0.7)), color-stop(100%,rgba(243, 42, 42,0.7)));
+	background: -webkit-linear-gradient(45deg, rgba(141, 198, 63,0.7) 0%,rgba(243, 42, 42,0.7) 100%);
+	background: -o-linear-gradient(45deg, rgba(141, 198, 63,0.7) 0%,rgba(243, 42, 42,0.7) 100%);
+	background: -ms-linear-gradient(45deg, rgba(141, 198, 63,0.7) 0%,rgba(243, 42, 42,0.7) 100%);
+	background: linear-gradient(45deg, rgba(141, 198, 63,0.7) 0%,rgba(243, 42, 42,0.7) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0072bc', endColorstr='#8dc63f',GradientType=1 );
+
+}
+
+.nicescroll-rails div {
+	background:rgba(243, 42, 42, 1)!important;
+}
+
+/* // RGBA For Primary Color */
+
+/* Secondary Color */
+.btn-3:hover, 
+.btn-3:active {
+    background: #F05858;
+}
+
+.cbp_tmtimeline > li .cbp_tmicon {
+	background: #F05858;
+}
+
+.modal-table tr {
+    background: #F05858;
+}
+/* // Secondary Color */

@@ -1,0 +1,151 @@
+
+
+/* Common Section */
+h1 {
+	color:#f9f9f9;
+}
+
+h2 { 
+	color:#d8d8d8;
+}
+
+h3,
+.author-foot h3 small {
+	color:#EAEAEA;
+}
+
+h4 { 
+	color:#b8b8b8;
+}
+
+p {
+	color:#7a7a7a;
+}
+
+.content-bg-color {
+	background:rgba(0,0,0,0.9);
+}
+
+/* PreLoader Section */
+#jpreOverlay, 
+#jSplash { 
+	background:#454545;
+}
+
+#jprePercentage { 
+	color:#fff;
+}
+/* // PreLoader Section */
+
+/* NiceScroll Section */
+.nicescroll-rails {
+	background-color:rgba(61,61,61,.8)!important;
+}
+/*//  NiceScroll Section */
+
+/* Sub Page Section */
+
+/* Sub Page Common Sections */
+.heading-icons {
+    color: rgba(68, 68, 68, .7);
+}
+
+.resume-shadow,
+.service-shadow,
+.testimonials-shadow {
+    color: rgba(255,255,255,0.04);
+}
+
+.panel {
+    background: rgba(51,51,51,.3);
+    box-shadow: none;
+}
+
+/* // Sub Page Common Sections */
+
+/* Skills */
+.percent {
+    color: #e4e4e4;
+}
+
+.progress_bars li .bar-wrap {
+    background: #858585;
+}
+/* // Skills */
+
+/* Resume */
+.cbp_tmtimeline > li .cbp_tmlabel {
+	color:#fff;
+}
+
+.cbp_tmtimeline > li .cbp_tmtime span:first-child {
+    color: #c8c8c8;
+}
+
+.cbp_tmtimeline > li .cbp_tmtime span:last-child {
+    color: #ADAEAE;
+}
+
+.cbp_tmtimeline > li:nth-child(odd) .cbp_tmlabel, .cbp_tmtimeline > li .cbp_tmlabel {
+    background: rgba(51,51,51,.3);
+    box-shadow: none;
+}
+
+.cbp_tmtimeline > li .cbp_tmlabel:after {
+    border-right-color: rgba(51,51,51,.3);
+    box-shadow: none;
+}
+
+@media screen and (max-width: 47.2em), (max-width: 1200px) and (min-width: 992px) {
+.cbp_tmtimeline > li .cbp_tmlabel:after {
+    border-right-color: transparent;
+    border-bottom-color: rgba(51,51,51,.3);
+}
+}
+
+
+/* Modal */
+.modal h1,
+.modal h2,
+.modal h3,
+.modal h1 {
+    color: inherit;
+}
+/* // Modal */
+
+/* Testimonials */
+.testimonials .panel:before, .testimonials .panel:after {
+    border-top: 30px solid rgba(51,51,51,.3);
+}
+/* // Testimonials */
+
+/* Team */
+.team .panel:after {
+    border-right-color: rgba(51,51,51,.3);
+	-webkit-filter:none;
+	filter:none;
+}
+
+@media (max-width: 1200px) {
+.team .panel:after {
+    border-right-color: transparent;
+    border-bottom-color: rgba(51,51,51,.3);
+}
+}
+/* // Team */
+
+/* Contact */
+#contact_form input, #contact_form textarea {
+    box-shadow: 0px 3px 0px rgba(33, 33, 33, .8);
+}
+
+.address li {
+	color:#b8b8b8;
+}
+
+.gm-style-iw h2 {
+	color:#272727;
+}
+/* // Contact */
+
+/* // Sub Page Section */
