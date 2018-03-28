@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^samairas.com [NC]
+RewriteRule ^(.*)$ http://www.samairas.com/$1 [L,R=301]
